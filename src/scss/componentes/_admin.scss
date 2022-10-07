@@ -1,0 +1,54 @@
+@use  'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+    &.error {
+        background-color: red;
+    }
+
+    &.exito {
+        background-color: rgba(0, 176, 0, 0.84);
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    margin-right: 4rem;
+    border-spacing: 0;
+
+    thead {
+        background-color:rgba(0, 158, 176, 0.84);
+
+        th {
+            color: white;
+        }
+    }
+}
+
+.imagen-tabla {
+    width: 10rem;
+}
+
+.imagen-anuncio {
+    width: 100%;
+}
+.imagen-propiedad {
+    width: 100%;
+}
+
+.img-small {
+    width: 30rem
+}
+
+.anuncioz{
+    text-align: center;
+
+}

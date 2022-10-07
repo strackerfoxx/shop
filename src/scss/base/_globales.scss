@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+.error404 {
+    padding-top: 27rem;
+    text-align: center;
+    background-color: rgb(82, 82, 82);
+    color: goldenrod;
+}
+body {
+    font-family: v.$fuente_textos;
+    font-size: 1.6rem;
+    min-height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.contenedor-sm {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}

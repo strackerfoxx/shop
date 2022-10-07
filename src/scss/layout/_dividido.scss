@@ -1,0 +1,49 @@
+@use  'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dividido{
+    height: auto;
+    background-color: rgb(28, 28, 28);
+    display: grid;
+    padding-top: 6rem;
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+    @include m.tablet{
+        @include m.grid(2, .3rem);
+    }
+    .right{
+        display: block;
+        text-align: center;
+        background-color: rgb(28, 28, 28);
+        color: whitesmoke;
+        @include m.tablet{
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            height: 47vh;
+            margin-bottom: 4rem;
+            padding-bottom: 3rem;
+            padding-top: 8rem;
+            padding-bottom: 0rem;
+        }
+        @include m.desktop{
+            height: 47vh;
+            padding: 3rem;
+            padding-right: 2rem;
+            margin-right: 3rem;
+            text-align: start;
+            padding-left: 0.3;
+        }
+        
+    }
+    .left{
+        @include m.desktop{
+            width: 77vh;
+            margin-left: 3rem;
+        }
+        @include m.tablet{
+            padding: 0rem;
+        }
+    }
+    
+}

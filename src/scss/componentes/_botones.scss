@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton-amarillo {
+    @include m.boton-B(v.$amarillo, inline-block);
+}
+.boton-rojo {
+    @include m.boton-B(v.$rojo, inline-block);
+    margin-bottom: 0 auto;
+}
+
+.boton-amarillo-block {
+    @include m.boton-B(v.$amarillo, block);
+    width: 100%;
+    border: 0px;
+}
+
+.boton-verde {
+    @include m.boton-B(v.$verde, inline-block);
+}
+
+.boton-rojo-block {
+    @include m.boton-B(v.$rojo, block);
+    width: 100%;
+    border: 0px solid transparent;
+}
+
+.boton-sec {
+    @include m.boton-B(rgb(0, 172, 211), inline-block);
+    border-radius: 1rem;
+}
+
+.boton-verde-block {
+    @include m.boton-B(v.$verde, block);
+    width: 100%;
+}
+
+.alerta-verde {
+    background-color: v.$verde;
+    width: 100%;
+}

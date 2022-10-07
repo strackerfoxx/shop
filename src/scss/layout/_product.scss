@@ -1,0 +1,28 @@
+@use  'base/variables' as v;
+@use 'base/mixins' as m;
+
+.product{
+    margin-top: 8rem;
+    @include m.tablet{
+        @include m.grid(3, 10rem);
+    }
+    .name-desc{
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+    .final{
+        width: 30vh;
+        box-shadow: 0 0 3px rgb(112, 112, 112);
+        border-radius: .7rem;
+        padding: 3rem;
+        margin: 0 0 0 0;
+    }
+
+    .img{
+        margin-left: 2rem;
+        margin-right: 0;
+        padding: 0;
+        width: 60vh;
+    }
+}

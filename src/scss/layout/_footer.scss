@@ -1,0 +1,64 @@
+@use  'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.foot{
+    @include m.telefono{
+        display: block;
+        text-align: center;
+    }
+    background-color: rgb(38, 38, 38);
+        color: #fff;
+        @include m.tablet {
+            font-size: 1.4rem;
+            
+        }
+    a{ color: #fff; text-decoration: none; }
+
+    margin-top: 3rem;
+
+    #h4{
+        @include m.tablet {
+            font-width: bold;
+            font-size: 1.5rem; 
+            @include m.grid(3, 3rem);
+            margin-left: 3rem
+        }
+    }
+    .menu-footer{
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+            margin-left: 3rem;
+        }
+        margin-bottom: 2rem;
+        .column-f1{
+            @include m.telefono{
+                display: block;
+                text-align: center;
+            }
+            @include m.tablet {
+                @include m.grid(2, 3rem);
+                
+            }
+        }
+        
+        .newsletter{
+            display: block;
+        }
+    }
+
+    .iconos{
+        margin-top: 3rem;
+        padding: auto;
+        .icons{
+        display: block;
+            .icon{
+                width: 3rem;
+            }
+        }
+        @include m.tablet {
+            @include m.grid(3, 3rem);
+        }
+    }
+    
+}

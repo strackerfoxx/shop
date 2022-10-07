@@ -1,0 +1,20 @@
+@use  'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login{
+    margin-top: 5rem;
+    .uptask{
+        color:  goldenrod;
+        
+     }
+
+    input[type="submit"] {
+        @include m.boton(goldenrod, white)
+    }
+
+    .acciones {
+        a{
+            color: darken(gold, 20%);
+        }
+    }
+}
